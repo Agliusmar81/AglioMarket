@@ -10,11 +10,14 @@ gem 'sass-rails', '>= 6'
 gem 'webpacker', '~> 5.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
+gem 'friendly_id', '~> 5.4.0'
 gem 'devise'
 gem 'materialize-sass', '~> 1.0.0'
-gem "kt-paperclip", "~> 6.4", ">= 6.4.1"
-gem 'bootsnap', '>= 1.4.4', require: false
 gem 'will_paginate', '~> 3.3.0'
+gem "kt-paperclip", "~> 6.4", ">= 6.4.1"
+gem 'dotenv-rails', groups: [:development, :test]
+gem 'bootsnap', '>= 1.4.4', require: false
+
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
