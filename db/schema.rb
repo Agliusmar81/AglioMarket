@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_24_072026) do
+ActiveRecord::Schema.define(version: 2021_02_24_073938) do
 
   create_table "contents", force: :cascade do |t|
     t.string "titolo"
@@ -18,6 +18,15 @@ ActiveRecord::Schema.define(version: 2021_02_24_072026) do
     t.decimal "price"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id"
+    t.string "cover_file_name"
+    t.string "cover_content_type"
+    t.bigint "cover_file_size"
+    t.datetime "cover_updated_at"
+    t.string "allegato_file_name"
+    t.string "allegato_content_type"
+    t.bigint "allegato_file_size"
+    t.datetime "allegato_updated_at"
   end
 
   create_table "users", force: :cascade do |t|

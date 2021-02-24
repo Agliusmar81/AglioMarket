@@ -12,6 +12,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'devise'
 gem 'materialize-sass', '~> 1.0.0'
+gem "kt-paperclip", "~> 6.4", ">= 6.4.1"
 gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
