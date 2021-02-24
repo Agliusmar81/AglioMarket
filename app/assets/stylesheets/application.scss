@@ -50,6 +50,14 @@ main {
     height: 150px;
 }
 
+img.responsive-img, video.responsive-video {
+	height: 600px;
+}
+
+.row .col.l6 {
+	padding-top: 10px;
+}
+
 .page-footer {
 	padding-top: 5px;
 }
