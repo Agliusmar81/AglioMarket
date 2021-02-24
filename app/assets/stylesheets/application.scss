@@ -7,55 +7,63 @@ body {
     min-height: 100vh;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
-}
+  }
 
-h1 {
-    font-size: 3.4em;
-}
+  h1 {
+  	font-size: 3.5em;
+  }
 
-h2 {
-    font-size: 2.1em;
-}
-
-main {
-    flex: 1 0 auto;
-}
-
-.home-subtitle {
-    margin: 5% 0 5% 0;
-}
-
-.btn-devise {
-    width: 100%;
-}
-
-.show-img {
-    padding-right: 5%;
-}
-
-.show-titolo {
-    margin-top: 0;
-    font-size: 3.4em;
-}
-
-.show-prezzo {
+  h2 {
     font-size: 2em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  .home-subtitle {
+    margin: 5% 0 5% 0;
+  }
+
+  .content-show {
+    margin-top: 5%;
+  }
+
+  .dropdown-content {
+    min-width: 150px;
+  }
+
+ .btn-devise {
+ 	width: 100%;
+ }
+
+ .show-img {
+ 	padding-right: 5%;
+ }
+
+ img.responsive-img, video.responsive-video {
+	min-height: 450px;
 }
+
+ .show-titolo {
+ 	margin-top: 0;
+ 	font-size: 3.4em;
+ }
+
+ .show-prezzo {
+ 	font-size: 2em;
+ }
 
 .btn-form {
-    width: 100%;
+	width: 100%;
 }
 
 .card-image {
-    height: 150px;
-}
-
-img.responsive-img, video.responsive-video {
-	height: 600px;
-}
-
-.row .col.l6 {
-	padding-top: 10px;
+  height: 150px;
 }
 
 .page-footer {
@@ -67,11 +75,11 @@ img.responsive-img, video.responsive-video {
 }
 
 .fa-social {
-    padding: 0 5%;
+  padding: 0 10px;
 }
 
-@media (max-whidth: 600px) {
-    .fa-social {
-        padding: 0 2%;
-    }
+@media (max-width: 600px) {
+  .fa-social {
+  padding: 0 2%;
+  }
 }

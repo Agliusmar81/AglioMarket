@@ -1,13 +1,47 @@
+---
 it:
   activerecord:
     errors:
       messages:
         record_invalid: 'Validazione fallita: %{errors}'
         restrict_dependent_destroy:
-          has_one: Il record non può essere cancellato perchè esiste un %{record}
-            dipendente
-          has_many: Il record non può essere cancellato perchè esistono %{record}
-            dipendenti
+          has_one: Il record non può essere cancellato perchè esiste un %{record} dipendente
+          has_many: Il record non può essere cancellato perchè esistono %{record} dipendenti
+      format: "%{attribute} %{message}"
+      messages:
+        accepted: deve essere accettata
+        blank: non può essere lasciato in bianco
+        present: deve essere lasciato in bianco
+        confirmation: non coincide con %{attribute}
+        empty: non può essere vuoto
+        equal_to: deve essere uguale a %{count}
+        even: deve essere pari
+        exclusion: è riservato
+        greater_than: deve essere maggiore di %{count}
+        greater_than_or_equal_to: deve essere maggiore o uguale a %{count}
+        inclusion: non è compreso tra le opzioni disponibili
+        invalid: non è valido
+        less_than: deve essere minore di %{count}
+        less_than_or_equal_to: deve essere minore o uguale a %{count}
+        not_a_number: non è un numero
+        not_an_integer: non è un numero intero
+        odd: deve essere dispari
+        taken: è già presente
+        too_long:
+          one: è troppo lungo (il massimo è 1 carattere)
+          other: è troppo lungo (il massimo è %{count} caratteri)
+        too_short:
+          one: è troppo corto (il minimo è 1 carattere)
+          other: è troppo corto (il minimo è %{count} caratteri)
+        wrong_length:
+          one: è della lunghezza sbagliata (deve essere di 1 carattere)
+          other: è della lunghezza sbagliata (deve essere di %{count} caratteri)
+        other_than: devono essere di numero diverso da %{count}
+      template:
+        body: 'Ricontrolla i seguenti campi:'
+        header:
+          one: 'Non posso salvare questo %{model}: 1 errore'
+          other: 'Non posso salvare questo %{model}: %{count} errori.'
   date:
     abbr_day_names:
     - dom
@@ -18,7 +52,7 @@ it:
     - ven
     - sab
     abbr_month_names:
-    - 
+    -
     - gen
     - feb
     - mar
@@ -44,7 +78,7 @@ it:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-    - 
+    -
     - gennaio
     - febbraio
     - marzo
@@ -76,74 +110,34 @@ it:
         one: circa 1 anno
         other: circa %{count} anni
       half_a_minute: mezzo minuto
-      less_than_x_seconds:
-        one: meno di un secondo
-        other: meno di %{count} secondi
       less_than_x_minutes:
         one: meno di un minuto
         other: meno di %{count} minuti
+      less_than_x_seconds:
+        one: meno di un secondo
+        other: meno di %{count} secondi
       over_x_years:
         one: oltre un anno
         other: oltre %{count} anni
-      x_seconds:
-        one: 1 secondo
-        other: "%{count} secondi"
-      x_minutes:
-        one: 1 minuto
-        other: "%{count} minuti"
       x_days:
         one: 1 giorno
         other: "%{count} giorni"
+      x_minutes:
+        one: 1 minuto
+        other: "%{count} minuti"
       x_months:
         one: 1 mese
         other: "%{count} mesi"
-      x_years:
-        one: 1 anno
-        other: "%{count} anni"
+      x_seconds:
+        one: 1 secondo
+        other: "%{count} secondi"
     prompts:
-      second: Secondi
-      minute: Minuto
-      hour: Ora
       day: Giorno
+      hour: Ora
+      minute: Minuto
       month: Mese
+      second: Secondi
       year: Anno
-  errors:
-    format: "%{attribute} %{message}"
-    messages:
-      accepted: deve essere accettata
-      blank: non può essere lasciato in bianco
-      confirmation: non coincide con %{attribute}
-      empty: non può essere vuoto
-      equal_to: deve essere uguale a %{count}
-      even: deve essere pari
-      exclusion: è riservato
-      greater_than: deve essere maggiore di %{count}
-      greater_than_or_equal_to: deve essere maggiore o uguale a %{count}
-      inclusion: non è compreso tra le opzioni disponibili
-      invalid: non è valido
-      less_than: deve essere minore di %{count}
-      less_than_or_equal_to: deve essere minore o uguale a %{count}
-      not_a_number: non è un numero
-      not_an_integer: non è un numero intero
-      odd: deve essere dispari
-      other_than: devono essere di numero diverso da %{count}
-      present: deve essere lasciato in bianco
-      required: deve esistere
-      taken: è già presente
-      too_long:
-        one: è troppo lungo (il massimo è 1 carattere)
-        other: è troppo lungo (il massimo è %{count} caratteri)
-      too_short:
-        one: è troppo corto (il minimo è 1 carattere)
-        other: è troppo corto (il minimo è %{count} caratteri)
-      wrong_length:
-        one: è della lunghezza sbagliata (deve essere di 1 carattere)
-        other: è della lunghezza sbagliata (deve essere di %{count} caratteri)
-    template:
-      body: 'Ricontrolla i seguenti campi:'
-      header:
-        one: 'Non posso salvare questo %{model}: 1 errore'
-        other: 'Non posso salvare questo %{model}: %{count} errori.'
   helpers:
     select:
       prompt: Seleziona...
@@ -211,7 +205,7 @@ it:
       long: "%d %B %Y %H:%M"
       short: "%d %b %H:%M"
     pm: pm
-    devise:
+  devise:
     confirmations:
       confirmed: "Il tuo account è stato correttamente confermato."
       send_instructions: "Entro qualche minuto riceverai un messaggio email con le istruzioni per confermare il tuo account."
@@ -233,10 +227,6 @@ it:
         subject: "Istruzioni per reimpostare la password"
       unlock_instructions:
         subject: "Istruzioni per sbloccare l'account"
-      email_changed:
-        subject: "Email reimpostata"
-      password_change:
-        subject: "Password reimpostata"
     omniauth_callbacks:
       failure: 'Non è stato possibile autenticarti come %{kind} perché "%{reason}".'
       success: "Autenticato con successo dall'account %{kind}."
