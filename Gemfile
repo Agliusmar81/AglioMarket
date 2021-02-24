@@ -14,6 +14,7 @@ gem 'devise'
 gem 'materialize-sass', '~> 1.0.0'
 gem "kt-paperclip", "~> 6.4", ">= 6.4.1"
 gem 'bootsnap', '>= 1.4.4', require: false
+gem 'will_paginate', '~> 3.3.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
