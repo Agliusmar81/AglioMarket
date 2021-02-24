@@ -16,6 +16,8 @@ gem 'will_paginate', '~> 3.3.0'
 gem "kt-paperclip", "~> 6.4", ">= 6.4.1"
 gem 'stripe'
 gem 'aasm'
+gem 'aws-sdk', '~> 3'
+gem 'font-awesome-sass', '~> 5.15.1'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'bootsnap', '>= 1.4.4', require: false
 

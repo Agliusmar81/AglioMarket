@@ -1,41 +1,69 @@
 @import "materialize";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
 }
 
 h1 {
-  font-size: 3.4em;
+    font-size: 3.4em;
 }
 
+h2 {
+    font-size: 2.1em;
+}
 
 main {
     flex: 1 0 auto;
 }
 
+.home-subtitle {
+    margin: 5% 0 5% 0;
+}
+
 .btn-devise {
-  width: 100%;
+    width: 100%;
 }
 
 .show-img {
-  padding-right: 5%;
+    padding-right: 5%;
 }
 
 .show-titolo {
-  margin-top: 0;
-  font-size: 3.4em;
+    margin-top: 0;
+    font-size: 3.4em;
 }
 
 .show-prezzo {
-  font-size: 2em;
+    font-size: 2em;
 }
 
 .btn-form {
-  width: 100%;
+    width: 100%;
 }
 
 .card-image {
-  height: 150px;
+    height: 150px;
+}
+
+.page-footer {
+	padding-top: 5px;
+}
+
+.row {
+	margin-bottom: 5px;
+}
+
+.fa-social {
+    padding: 0 5%;
+}
+
+@media (max-whidth: 600px) {
+    .fa-social {
+        padding: 0 2%;
+    }
 }
