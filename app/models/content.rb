@@ -7,23 +7,12 @@ class Content < ApplicationRecord
 
 	has_many :sales
 
-	has_attached_file :cover
+	has_attached_file :cover  
   validates_attachment_content_type :cover, content_type: /\Aimage\/.*\z/,
-  :s3_protocol => ‘https’,
-  :s3_host_name => ENV[‘S3_HOST_NAME’],
-  :path => ENV[‘S3_PATH’],
-  :storage => ‘s3’,
-  :s3_region => ENV[‘AWS_REGION’]
   message: "Solo le immagini sono supportate"
 
-
-  has_attached_file :allegato
+  has_attached_file :allegato  
   validates_attachment_content_type :allegato, :content_type => [ /^image\/(png|gif|jpeg)/,'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document','application/mspowerpoint','application/vnd.ms-powerpoint','application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/pdf', 'application/msexcel','application/vnd.ms-excel','application/vnd.openxmlformats-officedocument.spreadsheetml.sheet','audio/mpeg', 'audio/mp3' ],
-  :s3_protocol => ‘https’,
-  :s3_host_name => ENV[‘S3_HOST_NAME’],
-  :path => ENV[‘S3_PATH’],
-  :storage => ‘s3’,
-  :s3_region => ENV[‘AWS_REGION’]
   message: "Formato non supportato"
 
   validates :titolo, :descrizione, :price, presence: true   
