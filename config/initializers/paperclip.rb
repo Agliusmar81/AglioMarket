@@ -19,7 +19,7 @@ Paperclip::Attachment.default_options[:s3_credentials] =
  { :bucket => 'agliomarket',
 
 
- :access_key_id => 'AKIA3RK62YTP5T2HM3FN',
+ :access_key_id => 'xxxxxxxxxxx',
 
 
- :secret_access_key => 'U+tFHZAStNCGDyPFVAI893+FeCgqQ+eZjWSK58yO' }
+ :secret_access_key => 'xxxxxxxxxxx' }
