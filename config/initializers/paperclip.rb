@@ -16,10 +16,10 @@ Paperclip::Attachment.default_options[:s3_protocol] = 'http'
 Paperclip::Attachment.default_options[:s3_credentials] = 
 
 
- { :bucket => 'agliusmar',
+ { :bucket => 'agliomarket',
 
 
- :access_key_id => 'AKIASAACNFJ5CTZ45NOK',
+ :access_key_id => 'AKIA3RK62YTP5T2HM3FN',
 
 
- :secret_access_key => 'AKIASAACNFJ5BTB4RLX5' }
+ :secret_access_key => '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' }
