@@ -20,6 +20,7 @@
 .byebug_history
 
 /config/master.key
+/config/database.yml
 
 /public/packs
 /public/packs-test
