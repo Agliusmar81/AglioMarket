@@ -43,11 +43,11 @@ Rails.application.configure do
 
       storage: :s3,
       
-      s3_region: ENV["us-east-2"],
+      s3_region: ENV["eu-central-1"],
       
       s3_credentials: {
       
-      s3_host_name: ENV['s3.us-east-2.amazonaws.com'],
+      s3_host_name: ENV['s3.eu-central-1.amazonaws.com'],
       
       bucket: ENV["agliomarket"],
       
